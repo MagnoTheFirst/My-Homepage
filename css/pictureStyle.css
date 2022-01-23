@@ -1,0 +1,14 @@
+#myPicture{
+    width: 150%;
+    heigth: 150%;
+    float: left;
+    margin-right: 5em;
+}
+
+@media (max-width: 600px) {
+
+    #myPicture{
+        width: 100%;
+        margin: auto;
+    }
+}
