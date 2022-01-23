@@ -36,6 +36,14 @@ h4 {
     margin: auto;
 }
 
+#skills{
+    margin-top: 5em;
+}
+
+.logos {
+    float: left;
+}
+
 .carousel-caption h3 {
     color: #fff !important;
 }
