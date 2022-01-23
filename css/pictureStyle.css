@@ -1,6 +1,6 @@
 #myPicture{
-    width: 150%;
-    heigth: 150%;
+    width: 100%;
+    heigth: 100%;
     float: left;
     margin-right: 5em;
     margin-top: 1em;
@@ -8,8 +8,8 @@
 
 .logos {
     margin-top: 5em;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 @media (max-width: 600px) {

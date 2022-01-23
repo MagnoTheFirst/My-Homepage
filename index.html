@@ -31,9 +31,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#myPage">HOME</a></li>
                     <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#goToSkills">SKILLS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                    <li><a id="gallery">GALLERY</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="templates/gallery.html" id="gallery">GALLERY</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
                     <span class="caret"></span></a>
@@ -91,11 +91,11 @@
     <div id="aboutme"></div>
 
     <!-- Container (The Band Section) -->
-    <div class="col-sm-4">
+    <div class="col-sm-6">
         <img id="myPicture" src="http://alejandro-laneri.internet-box.ch/website_folder/pictures/new_resources/IMG20220116155232.jpg" alt="" sizes="" srcset="">
     </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-6">
+
+    <div id="aboutMeContent" class="col-sm-6">
         <br><br>
         <h3 href="#" class="text-center">About Me</h3>
         <br><br>
@@ -116,6 +116,7 @@
     </div>
 
     <!-- Skill Logo Section -->
+    <div id="goToSkills"></div>
     <div id="skills" class="col-sm-12">
         <h3 href="#" class="text-center">SKILLS</h3>
         <div class="col-sm-3">
@@ -182,6 +183,7 @@
             <img class="logos"src="data:image/png;base64,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">
         </div>
     </div>
+
     <div id="" class="container text-left">
 
         <!-- Modal -->
@@ -205,7 +207,7 @@
 
         <div class="row">
             <div class="col-md-4">
-                <p>Schreib mir eine Nachricht</p>
+                <p>Kontaktieren Sie mich</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span>Bern Schweiz</p>
                 <p><span class="glyphicon glyphicon-phone"></span>Telefon: +41 79 969 90 54</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>Email: alejandro.r.laneri@gmail.com</p>
