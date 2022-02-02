@@ -1,5 +1,5 @@
 function postContactEntry(obj) {
-    var url = 'http://alejandro-laneri.internet-box.ch:8085/api/v1/contact/entry'
+    var url = 'localhost:8085/api/v1/contact/entry'
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("POST", url);
     xmlHttp.setRequestHeader("Accept", "application/json");
