@@ -10,10 +10,42 @@ function postContactEntry(obj) {
 
 function getFieldContent() {
     var contactEntry = {};
-    contactEntry.name = document.getElementById('name').value;
-    contactEntry.email = document.getElementById('email').value;
-    contactEntry.comment = document.getElementById('comments').value;
-    postContactEntry(JSON.stringify(contactEntry));
-    alert(JSON.stringify(contactEntry));
+    if (checkIfValueEmpty() && !checkIfAutorIsKeve()) {
+        contactEntry.name = document.getElementById('name').value;
+        contactEntry.email = document.getElementById('email').value;
+        contactEntry.comment = document.getElementById('comments').value;
+        postContactEntry(JSON.stringify(contactEntry));
+    } else {
+        alert("You have to fill out the form");
+    }
 
+
+
+}
+
+
+function checkIfValueEmpty() {
+    if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('comments').value == "") {
+        alert("Hey no fill out ")
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function checkIfAutorIsKeve() {
+    var name = document.getElementById('name').value;
+    name = name.toLowerCase();
+    if (name == "keve" || name == "kevin" || name == "kevusch" || "kev") {
+        alert("keve du gaylord");
+        return true;
+    }
+
+}
+
+
+function checkIfInsults() {
+    const insults = ["bitch", "nutte", "hure", "schwuchtel", "schwul###", "pisser", "spasst", "spacko", "miss###"]
+    var comment = document.getElementById('comments').value;
+    comment = comment.toLowerCase();
 }
