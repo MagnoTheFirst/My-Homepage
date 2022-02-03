@@ -10,10 +10,11 @@ function postContactEntry(obj) {
 
 function getFieldContent() {
     var contactEntry = {};
+    contactEntry.name = document.getElementById('name').value;
+    contactEntry.email = document.getElementById('email').value;
+    contactEntry.comment = document.getElementById('comments').value;
     if (checkIfValueEmpty()) {
-        contactEntry.name = document.getElementById('name').value;
-        contactEntry.email = document.getElementById('email').value;
-        contactEntry.comment = document.getElementById('comments').value;
+        console.log(JSON.stringify(contactEntry));
         postContactEntry(JSON.stringify(contactEntry));
     } else {
         alert("You have to fill out the form");
