@@ -10,7 +10,7 @@ function postContactEntry(obj) {
 
 function getFieldContent() {
     var contactEntry = {};
-    if (checkIfValueEmpty() && !checkIfAutorIsKeve()) {
+    if (checkIfValueEmpty()) {
         contactEntry.name = document.getElementById('name').value;
         contactEntry.email = document.getElementById('email').value;
         contactEntry.comment = document.getElementById('comments').value;
