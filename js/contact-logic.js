@@ -14,8 +14,11 @@ function getFieldContent() {
     contactEntry.email = document.getElementById('email').value;
     contactEntry.comment = document.getElementById('comments').value;
     if (checkIfValueEmpty()) {
-        console.log(JSON.stringify(contactEntry));
-        postContactEntry(JSON.stringify(contactEntry));
+        checkIfAutorIsKeve();
+        const obj = JSON.stringify(contactEntry);
+        console.log(obj);
+        postContactEntry(obj);
+        alert("Your Message was successfully sended");
     } else {
         alert("You have to fill out the form");
     }
