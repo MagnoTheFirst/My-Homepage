@@ -247,17 +247,25 @@
         </div>
         <br>
     </div>
-    <button class="open-button" onclick="openForm()">Chat</button>
-    <div class="open-button" class="chat-popup" id="myForm">
-        <div id="chat"></div>
-        <form action="/action_page.php" class="form-container">
-            <h1>Chat</h1>
-            <iframe src="http://alejandro-laneri.internet-box.ch:8084/" title="W3Schools Free Online Web Tutorials">
-                </iframe>
+    <button id="open-button" class="open-button" onclick="openForm(), hideChatBtn()">Chat</button>
 
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
+    <div class="chat-container">
+        <div class="open-button" class="chat-popup" id="myForm">
+            <div id="chat"></div>
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+                <iframe src="http://alejandro-laneri.internet-box.ch:8084/" title="W3Schools Free Online Web Tutorials">
+                    </iframe>
+
+                <button type="button" class="btn cancel" onclick="closeForm(), showBtn()">Close</button>
+            </form>
+        </div>
     </div>
+
+
+
+
+
     <!-- Footer -->
     <footer class="text-center">
         <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">

@@ -103,3 +103,52 @@ iframe {
     width: 35em;
     height: 35em;
 }
+
+@media only screen and (max-width: 600px) {
+    .chat-container {
+        top: 50%;
+        /* IMPORTANT */
+        left: 50%;
+        /* IMPORTANT */
+        padding-left: 2em;
+        position: fixed;
+    }
+    iframe {
+        width: max-content;
+        height: 25em;
+    }
+    .form-container {
+        max-width: 40em;
+        margin-left: 15px;
+        background-color: white;
+    }
+    .form-container .btn {
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+    .form-popup {
+        display: none;
+        bottom: 0;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+    }
+    .chat-popup {
+        position: fixed;
+        text-align: center;
+        width: max-content;
+        float: right;
+        margin-left: 10px;
+    }
+    #myForm {
+        display: flex;
+        margin-left: 2.5em;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        opacity: 1;
+        float: right;
+    }
+}
