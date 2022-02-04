@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/chat-logic.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/contact-logic.js"></script>
@@ -32,10 +37,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#myPage">HOME</a></li>
                     <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#aboutme">ABOUT THIS HOMEPAGE</a></li>
+                    <li><a href="#abouthomepage">ABOUT THIS HOMEPAGE</a></li>
                     <li><a href="#goToSkills">SKILLS</a></li>
-                    <li><a href="#myPage">PORTFOLIO</a></li>
-                    <li><a href="#myPage">SOCIAL</a></li>
+                    <!--  <li><a href="#myPage">PORTFOLIO</a></li> -->
+                    <!-- <li><a href="#myPage">SOCIAL</a></li> -->
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="templates/gallery.html" id="gallery">GALLERY</a></li>
                     <li class="dropdown">
@@ -118,6 +123,10 @@
         <br>
     </div>
 
+    <div id="abouthomepage">
+        <h3 href="#" class="text-center">ABOUT THIS WEBSITE</h3>
+        <p></p>
+    </div>
     <!-- Skill Logo Section -->
 
     <div id="skills" class="col-sm-12">
@@ -238,11 +247,17 @@
         </div>
         <br>
     </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="open-button" class="chat-popup" id="myForm">
+        <div id="chat"></div>
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+            <iframe src="http://localhost:8084/" title="W3Schools Free Online Web Tutorials">
+                </iframe>
 
-
-    <!-- Image of location/map 
-    <img src="map.jpg" class="img-responsive" style="width:100%">-->
-
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
     <!-- Footer -->
     <footer class="text-center">
         <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
