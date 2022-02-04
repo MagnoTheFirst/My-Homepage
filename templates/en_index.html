@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/pictureStyle.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/chat.css">
+    <script src="../js/chat-logic.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -112,6 +116,11 @@
 
         </p>
         <br>
+    </div>
+
+    <div id="abouthomepage">
+        <h3 href="#" class="text-center">ABOUT THIS WEBSITE</h3>
+        <p></p>
     </div>
 
     <!-- Skill Logo Section -->
@@ -235,9 +244,18 @@
         <br>
     </div>
 
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="open-button" class="chat-popup" id="myForm">
+        <div id="chat"></div>
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+            <iframe src="http://localhost:8084/" title="W3Schools Free Online Web Tutorials">
+                </iframe>
 
-    <!-- Image of location/map -->
-    <img src="map.jpg" class="img-responsive" style="width:100%">
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
 
     <!-- Footer -->
     <footer class="text-center">
